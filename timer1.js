@@ -5,7 +5,7 @@ const timer = () => {
       console.log('Please put Valid Number!')
       break;
     }
-    if (typeof Number(e) === 'number') {
+    if ((Number(e) % 1) === 0) {
       setTimeout(() => {
         process.stdout.write('\x07');
         console.log("WAKE UP!!!!! WAKE UP!!!!! WAKE UP!!!!")
